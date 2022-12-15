@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        fieldset {
+            max-width: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>Your details</legend>
+
+            <ol>
+                <li> <label for="name">Name: </label><input type="text" name="nombre" id="nombre"
+                    placeholder="First and last name"></li><br>
+                <li> <label for="email">Email: </label><input type="text" name="email" id="email"
+                    placeholder="example@domain.com"></li><br>
+                <li> <label for="phone">Phone: </label><input type="phone number" name="phone number"
+                    id="phone number" placeholder="Eg. +447500000000"></li><br>
+            </ol>
+        </fieldset>
+
+        <fieldset>
+            <legend>Delivery Address</legend>
+            <ol>
+                <li> <label for="address">Address: </label><textarea name="comentarios" id="comentarios" rows="4" cols="30" maxlength="200"></textarea></li>
+                <br>
+                <li> <label for="postcode">Post code: </label><input type="text" name="postcode"></li>
+                <br>
+                <li> <label for="country">Country: </label><input type="text" name="phone"></li>
+                <br>
+            </ol>
+        </fieldset>
+
+        <fieldset>
+            <legend>Card details</legend>
+            <label for="">
+                <ol>
+                    <li>
+                        <fieldset>
+                            <legend>
+                                Card Type
+                            </legend>
+                            <ol>
+                                <li><input type="radio" name="visa" value="visa">
+                                    <label for="visa">Visa</label><br></li>
+                                <li><input type="radio" name="visa" value="visa">
+                                    <label for="visa">AmEx</label><br></li>
+                                <li><input type="radio" name="visa" value="visa">
+                                    <label for="visa">Mastercard</label><br></li>
+                            </ol>
+                        </fieldset>
+                    </li>
+                    <li><label for="number">Card number </label><input type="text" name="Card number:"></li>
+                    <li><label for="number">Security code </label><input type="text" name="Card number:"></li>
+                    <li><label for="number">Name on card </label><input type="text" name="Card number:" placeholder="Exact name as on the"></li>
+        </ol>
+        </label>
+        </fieldset>
+        <fieldset>
+            <input style="border-radius: 15%;" type="submit" class="button" value="Buy it!">
+        </fieldset>
+    </form>
+</body>
+
+</html>
